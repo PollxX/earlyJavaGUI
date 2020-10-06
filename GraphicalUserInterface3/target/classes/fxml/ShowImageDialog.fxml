@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+
+<GridPane alignment="CENTER" hgap="10.0" vgap="10.0"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="ku.piii2019.gui3.ShowImageDialogController">
+    <Label style="-fx-font: NORMAL 20 Tahoma;" text="Music Collection"                
+           GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="imageViewLabel">
+    </Label>
+    <Button fx:id="button1" 
+               GridPane.columnIndex="0" 
+            GridPane.rowIndex="1" 
+            text="Previous Image" 
+            onAction="#previousImage" />
+    <ImageView fx:id="imageView1" 
+               GridPane.columnIndex="1" 
+               GridPane.columnSpan="1" 
+               GridPane.hgrow="ALWAYS" 
+               GridPane.vgrow="ALWAYS"        
+               GridPane.rowIndex="1">
+    </ImageView>
+    <Button fx:id="button2" 
+               GridPane.columnIndex="2" 
+            GridPane.rowIndex="1" 
+            text="Next Image" 
+            onAction="#nextImage" />
+
+</GridPane>
