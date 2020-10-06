@@ -1,0 +1,4 @@
+--patch-module
+BL3=_
+--add-reads
+BL3=ALL-UNNAMED
